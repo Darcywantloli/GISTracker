@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "883287FE-DA55-4AD4-AEDE-E37063A0633A"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BB09F2A5-8949-4804-AD3D-07BE45FD695C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GISTracker/Model/BluetoothServices.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
+            landmarkName = "peripheral(_:didWriteValueFor:error:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BB09F2A5-8949-4804-AD3D-07BE45FD695C - a6fab302c7f1f52f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GISTracker.BluetoothServices.peripheral(_: __C.CBPeripheral, didWriteValueFor: __C.CBCharacteristic, error: Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
+                  moduleName = "GISTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/imac-3282/Desktop/GISTracker/GISTracker/Model/BluetoothServices.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "174"
+                  endingLineNumber = "174"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "BB09F2A5-8949-4804-AD3D-07BE45FD695C - a6fab302c7f1f4ce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GISTracker.BluetoothServices.peripheral(_: __C.CBPeripheral, didWriteValueFor: __C.CBCharacteristic, error: Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
+                  moduleName = "GISTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/imac-3282/Desktop/GISTracker/GISTracker/Model/BluetoothServices.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "175"
+                  endingLineNumber = "175"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

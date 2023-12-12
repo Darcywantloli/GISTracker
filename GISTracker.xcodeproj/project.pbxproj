@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B06B89612B0E024F00695C8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06B89602B0E024F00695C8C /* AppDelegate.swift */; };
+		B06B89632B0E024F00695C8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06B89622B0E024F00695C8C /* SceneDelegate.swift */; };
+		B06B896A2B0E025100695C8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B06B89692B0E025100695C8C /* Assets.xcassets */; };
+		B06B896D2B0E025100695C8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B06B896B2B0E025100695C8C /* LaunchScreen.storyboard */; };
+		B06B89782B0E025100695C8C /* GISTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06B89772B0E025100695C8C /* GISTrackerTests.swift */; };
+		B06B89822B0E025100695C8C /* GISTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06B89812B0E025100695C8C /* GISTrackerUITests.swift */; };
+		B06B89842B0E025100695C8C /* GISTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06B89832B0E025100695C8C /* GISTrackerUITestsLaunchTests.swift */; };
+		B06B89932B0E02B100695C8C /* BluetoothServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06B89922B0E02B100695C8C /* BluetoothServices.swift */; };
+		B06B89962B0E086800695C8C /* BLEPeripheralListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06B89942B0E086800695C8C /* BLEPeripheralListViewController.swift */; };
+		B06B89972B0E086800695C8C /* BLEPeripheralListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06B89952B0E086800695C8C /* BLEPeripheralListViewController.xib */; };
+		B06B899C2B0E096200695C8C /* PeripheralNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06B899A2B0E096200695C8C /* PeripheralNameTableViewCell.swift */; };
+		B06B899D2B0E096200695C8C /* PeripheralNameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06B899B2B0E096200695C8C /* PeripheralNameTableViewCell.xib */; };
+		B06B89A02B14792500695C8C /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06B899E2B14792500695C8C /* LogViewController.swift */; };
+		B06B89A12B14792500695C8C /* LogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06B899F2B14792500695C8C /* LogViewController.xib */; };
+		B06B89A42B14825A00695C8C /* LogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06B89A22B14825A00695C8C /* LogTableViewCell.swift */; };
+		B06B89A52B14825A00695C8C /* LogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06B89A32B14825A00695C8C /* LogTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B06B89742B0E025100695C8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B06B89552B0E024F00695C8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B06B895C2B0E024F00695C8C;
+			remoteInfo = GISTracker;
+		};
+		B06B897E2B0E025100695C8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B06B89552B0E024F00695C8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B06B895C2B0E024F00695C8C;
+			remoteInfo = GISTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B06B895D2B0E024F00695C8C /* GISTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GISTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B06B89602B0E024F00695C8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B06B89622B0E024F00695C8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B06B89692B0E025100695C8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B06B896C2B0E025100695C8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B06B896E2B0E025100695C8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B06B89732B0E025100695C8C /* GISTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GISTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B06B89772B0E025100695C8C /* GISTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GISTrackerTests.swift; sourceTree = "<group>"; };
+		B06B897D2B0E025100695C8C /* GISTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GISTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B06B89812B0E025100695C8C /* GISTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GISTrackerUITests.swift; sourceTree = "<group>"; };
+		B06B89832B0E025100695C8C /* GISTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GISTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B06B89922B0E02B100695C8C /* BluetoothServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothServices.swift; sourceTree = "<group>"; };
+		B06B89942B0E086800695C8C /* BLEPeripheralListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEPeripheralListViewController.swift; sourceTree = "<group>"; };
+		B06B89952B0E086800695C8C /* BLEPeripheralListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLEPeripheralListViewController.xib; sourceTree = "<group>"; };
+		B06B899A2B0E096200695C8C /* PeripheralNameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralNameTableViewCell.swift; sourceTree = "<group>"; };
+		B06B899B2B0E096200695C8C /* PeripheralNameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeripheralNameTableViewCell.xib; sourceTree = "<group>"; };
+		B06B899E2B14792500695C8C /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		B06B899F2B14792500695C8C /* LogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogViewController.xib; sourceTree = "<group>"; };
+		B06B89A22B14825A00695C8C /* LogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTableViewCell.swift; sourceTree = "<group>"; };
+		B06B89A32B14825A00695C8C /* LogTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B06B895A2B0E024F00695C8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B06B89702B0E025100695C8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B06B897A2B0E025100695C8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B06B89542B0E024F00695C8C = {
+			isa = PBXGroup;
+			children = (
+				B06B895F2B0E024F00695C8C /* GISTracker */,
+				B06B89762B0E025100695C8C /* GISTrackerTests */,
+				B06B89802B0E025100695C8C /* GISTrackerUITests */,
+				B06B895E2B0E024F00695C8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B06B895E2B0E024F00695C8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B06B895D2B0E024F00695C8C /* GISTracker.app */,
+				B06B89732B0E025100695C8C /* GISTrackerTests.xctest */,
+				B06B897D2B0E025100695C8C /* GISTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B06B895F2B0E024F00695C8C /* GISTracker */ = {
+			isa = PBXGroup;
+			children = (
+				B06B89602B0E024F00695C8C /* AppDelegate.swift */,
+				B06B89622B0E024F00695C8C /* SceneDelegate.swift */,
+				B06B89692B0E025100695C8C /* Assets.xcassets */,
+				B06B896B2B0E025100695C8C /* LaunchScreen.storyboard */,
+				B06B896E2B0E025100695C8C /* Info.plist */,
+				B06B89902B0E028E00695C8C /* Model */,
+				B06B89912B0E029300695C8C /* View */,
+				B06B89992B0E091500695C8C /* Controller */,
+			);
+			path = GISTracker;
+			sourceTree = "<group>";
+		};
+		B06B89762B0E025100695C8C /* GISTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B06B89772B0E025100695C8C /* GISTrackerTests.swift */,
+			);
+			path = GISTrackerTests;
+			sourceTree = "<group>";
+		};
+		B06B89802B0E025100695C8C /* GISTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B06B89812B0E025100695C8C /* GISTrackerUITests.swift */,
+				B06B89832B0E025100695C8C /* GISTrackerUITestsLaunchTests.swift */,
+			);
+			path = GISTrackerUITests;
+			sourceTree = "<group>";
+		};
+		B06B89902B0E028E00695C8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B06B89922B0E02B100695C8C /* BluetoothServices.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B06B89912B0E029300695C8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B06B89982B0E08E700695C8C /* Conponents */ = {
+			isa = PBXGroup;
+			children = (
+				B06B899A2B0E096200695C8C /* PeripheralNameTableViewCell.swift */,
+				B06B899B2B0E096200695C8C /* PeripheralNameTableViewCell.xib */,
+				B06B89A22B14825A00695C8C /* LogTableViewCell.swift */,
+				B06B89A32B14825A00695C8C /* LogTableViewCell.xib */,
+			);
+			path = Conponents;
+			sourceTree = "<group>";
+		};
+		B06B89992B0E091500695C8C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B06B89942B0E086800695C8C /* BLEPeripheralListViewController.swift */,
+				B06B89952B0E086800695C8C /* BLEPeripheralListViewController.xib */,
+				B06B899E2B14792500695C8C /* LogViewController.swift */,
+				B06B899F2B14792500695C8C /* LogViewController.xib */,
+				B06B89982B0E08E700695C8C /* Conponents */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B06B895C2B0E024F00695C8C /* GISTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B06B89872B0E025100695C8C /* Build configuration list for PBXNativeTarget "GISTracker" */;
+			buildPhases = (
+				B06B89592B0E024F00695C8C /* Sources */,
+				B06B895A2B0E024F00695C8C /* Frameworks */,
+				B06B895B2B0E024F00695C8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GISTracker;
+			productName = GISTracker;
+			productReference = B06B895D2B0E024F00695C8C /* GISTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B06B89722B0E025100695C8C /* GISTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B06B898A2B0E025100695C8C /* Build configuration list for PBXNativeTarget "GISTrackerTests" */;
+			buildPhases = (
+				B06B896F2B0E025100695C8C /* Sources */,
+				B06B89702B0E025100695C8C /* Frameworks */,
+				B06B89712B0E025100695C8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B06B89752B0E025100695C8C /* PBXTargetDependency */,
+			);
+			name = GISTrackerTests;
+			productName = GISTrackerTests;
+			productReference = B06B89732B0E025100695C8C /* GISTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B06B897C2B0E025100695C8C /* GISTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B06B898D2B0E025100695C8C /* Build configuration list for PBXNativeTarget "GISTrackerUITests" */;
+			buildPhases = (
+				B06B89792B0E025100695C8C /* Sources */,
+				B06B897A2B0E025100695C8C /* Frameworks */,
+				B06B897B2B0E025100695C8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B06B897F2B0E025100695C8C /* PBXTargetDependency */,
+			);
+			name = GISTrackerUITests;
+			productName = GISTrackerUITests;
+			productReference = B06B897D2B0E025100695C8C /* GISTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B06B89552B0E024F00695C8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B06B895C2B0E024F00695C8C = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					B06B89722B0E025100695C8C = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = B06B895C2B0E024F00695C8C;
+					};
+					B06B897C2B0E025100695C8C = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = B06B895C2B0E024F00695C8C;
+					};
+				};
+			};
+			buildConfigurationList = B06B89582B0E024F00695C8C /* Build configuration list for PBXProject "GISTracker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B06B89542B0E024F00695C8C;
+			productRefGroup = B06B895E2B0E024F00695C8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B06B895C2B0E024F00695C8C /* GISTracker */,
+				B06B89722B0E025100695C8C /* GISTrackerTests */,
+				B06B897C2B0E025100695C8C /* GISTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B06B895B2B0E024F00695C8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06B899D2B0E096200695C8C /* PeripheralNameTableViewCell.xib in Resources */,
+				B06B89972B0E086800695C8C /* BLEPeripheralListViewController.xib in Resources */,
+				B06B89A12B14792500695C8C /* LogViewController.xib in Resources */,
+				B06B896D2B0E025100695C8C /* LaunchScreen.storyboard in Resources */,
+				B06B89A52B14825A00695C8C /* LogTableViewCell.xib in Resources */,
+				B06B896A2B0E025100695C8C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B06B89712B0E025100695C8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B06B897B2B0E025100695C8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B06B89592B0E024F00695C8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06B89A42B14825A00695C8C /* LogTableViewCell.swift in Sources */,
+				B06B89612B0E024F00695C8C /* AppDelegate.swift in Sources */,
+				B06B89632B0E024F00695C8C /* SceneDelegate.swift in Sources */,
+				B06B89962B0E086800695C8C /* BLEPeripheralListViewController.swift in Sources */,
+				B06B89A02B14792500695C8C /* LogViewController.swift in Sources */,
+				B06B89932B0E02B100695C8C /* BluetoothServices.swift in Sources */,
+				B06B899C2B0E096200695C8C /* PeripheralNameTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B06B896F2B0E025100695C8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06B89782B0E025100695C8C /* GISTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B06B89792B0E025100695C8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06B89822B0E025100695C8C /* GISTrackerUITests.swift in Sources */,
+				B06B89842B0E025100695C8C /* GISTrackerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B06B89752B0E025100695C8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B06B895C2B0E024F00695C8C /* GISTracker */;
+			targetProxy = B06B89742B0E025100695C8C /* PBXContainerItemProxy */;
+		};
+		B06B897F2B0E025100695C8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B06B895C2B0E024F00695C8C /* GISTracker */;
+			targetProxy = B06B897E2B0E025100695C8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B06B896B2B0E025100695C8C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B06B896C2B0E025100695C8C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B06B89852B0E025100695C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B06B89862B0E025100695C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B06B89882B0E025100695C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8FBP4YLUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GISTracker/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darcy.GISTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B06B89892B0E025100695C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8FBP4YLUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GISTracker/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darcy.GISTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B06B898B2B0E025100695C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8FBP4YLUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darcy.GISTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GISTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GISTracker";
+			};
+			name = Debug;
+		};
+		B06B898C2B0E025100695C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8FBP4YLUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darcy.GISTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GISTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GISTracker";
+			};
+			name = Release;
+		};
+		B06B898E2B0E025100695C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8FBP4YLUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darcy.GISTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GISTracker;
+			};
+			name = Debug;
+		};
+		B06B898F2B0E025100695C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8FBP4YLUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darcy.GISTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GISTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B06B89582B0E024F00695C8C /* Build configuration list for PBXProject "GISTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B06B89852B0E025100695C8C /* Debug */,
+				B06B89862B0E025100695C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B06B89872B0E025100695C8C /* Build configuration list for PBXNativeTarget "GISTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B06B89882B0E025100695C8C /* Debug */,
+				B06B89892B0E025100695C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B06B898A2B0E025100695C8C /* Build configuration list for PBXNativeTarget "GISTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B06B898B2B0E025100695C8C /* Debug */,
+				B06B898C2B0E025100695C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B06B898D2B0E025100695C8C /* Build configuration list for PBXNativeTarget "GISTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B06B898E2B0E025100695C8C /* Debug */,
+				B06B898F2B0E025100695C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B06B89552B0E024F00695C8C /* Project object */;
+}

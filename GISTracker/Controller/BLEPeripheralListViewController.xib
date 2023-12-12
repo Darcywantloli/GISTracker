@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BLEPeripheralListViewController" customModule="GISTracker" customModuleProvider="target">
+            <connections>
+                <outlet property="peripheralListTableView" destination="JdJ-XS-zsL" id="6S1-yg-3gc"/>
+                <outlet property="testButton" destination="ZYK-5r-LvJ" id="LXy-Mw-MwN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JdJ-XS-zsL">
+                    <rect key="frame" x="0.0" y="59" width="393" height="681.66666666666663"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYK-5r-LvJ">
+                    <rect key="frame" x="98.333333333333329" y="750.66666666666663" width="196.33333333333337" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Test" cornerStyle="capsule">
+                        <backgroundConfiguration key="background" strokeWidth="5">
+                            <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </backgroundConfiguration>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="test:" destination="-1" eventType="touchUpInside" id="HJ7-0R-VTW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ZYK-5r-LvJ" firstAttribute="width" secondItem="JdJ-XS-zsL" secondAttribute="width" multiplier="0.5" id="19c-QG-cUT"/>
+                <constraint firstItem="JdJ-XS-zsL" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.8" id="9P6-lq-csP"/>
+                <constraint firstItem="JdJ-XS-zsL" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="DcP-Ws-2Dr"/>
+                <constraint firstItem="ZYK-5r-LvJ" firstAttribute="centerX" secondItem="JdJ-XS-zsL" secondAttribute="centerX" id="Hky-jA-3Qp"/>
+                <constraint firstItem="JdJ-XS-zsL" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="WPc-pa-lXW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="JdJ-XS-zsL" secondAttribute="top" id="qBE-dt-eLm"/>
+                <constraint firstItem="ZYK-5r-LvJ" firstAttribute="top" secondItem="JdJ-XS-zsL" secondAttribute="bottom" constant="10" id="rUZ-JV-HxN"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="36" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
